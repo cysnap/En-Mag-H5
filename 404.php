@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lan="zh-CN">
+<html lan="en_US">
 <head>
 <title>404 | <?php bloginfo('name'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" type="text/css" media="screen" />
