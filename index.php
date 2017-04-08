@@ -48,9 +48,9 @@
 	<div class="post">
 		<div class="post-title">
 			<?php if(is_sticky()) : ?>
-			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?></a><?php _e('<span style="color:red;">[置顶] </span>'); ?></h2>
+			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?></a><?php _e('<span style="color:red;">[Sticky] </span>'); ?></h2>
 			<?php else: ?>
-			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?></a><?php video_tag(); ?><?php $diff = strtotime(date('Y-m-d H:i:s'))-strtotime(get_the_time('Y-m-d H:i:s')); if ($diff <= -25100){ ?><img alt="新" src="<?php echo get_stylesheet_directory_uri(); ?>/images/new-icon.gif"><?php } ?></h2>
+			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>" target="_blank"><?php the_title(); ?></a><?php video_tag(); ?><?php $diff = strtotime(date('Y-m-d H:i:s'))-strtotime(get_the_time('Y-m-d H:i:s')); if ($diff <= -25100){ ?><img alt="NEW" src="<?php echo get_stylesheet_directory_uri(); ?>/images/new-icon.gif"><?php } ?></h2>
 			<?php endif; ?>
 			<span class="post-count"><?php echo($rcmdcounter); ?>#</span>
 		</div>
@@ -81,7 +81,7 @@
 		<div class="post-bottom clearfix">
 			<span class="post-info"><?php the_author(); ?>&nbsp;Posted in &nbsp;: <time><?php the_time('m-d-Y H:i'); ?></time>&nbsp;-&nbsp; Topics : <?php foreach((get_the_category()) as $category) {echo $category->cat_name . ' ';}?>&nbsp;-&nbsp;<?php the_views($display = false); ?>&nbsp;views</span>
 			<span class="nova-r">
-				<?php comments_popup_link('DISCUSSION&nbsp;&raquo;', '1 comment&nbsp;&raquo;', '% comments&nbsp;&raquo;', 'post-comments'); ?>&nbsp;&nbsp;&nbsp;<a class="more-link" href="<?php the_permalink() ?>" title="<?php the_title(); ?>" target="_blank" rel="nofollow">Read More&nbsp;&raquo;</a>
+				<?php comments_popup_link('Discussion&nbsp;&raquo;', '1 comment&nbsp;&raquo;', '% comments&nbsp;&raquo;', 'post-comments'); ?>&nbsp;&nbsp;&nbsp;<a class="more-link" href="<?php the_permalink() ?>" title="<?php the_title(); ?>" target="_blank" rel="nofollow">Read More&nbsp;&raquo;</a>
 			</span>
 		</div>
 	</div>
