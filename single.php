@@ -25,7 +25,7 @@
 		</div>
 		<?php endif;?>
 		<?php the_content(); ?>
-		<span>EDITOR: <?php the_author();?>; TAGS: <?php the_tags('',', ',''); ?></span>
+		<span>Editor: <?php the_author();?>; Tags: <?php the_tags('',', ',''); ?></span>
 		<?php dynamic_sidebar('468x60-Ads'); ?>
 		</div>
 	</article>

@@ -22,8 +22,8 @@
 					<p class="c-form">You are login as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/"><?php echo $user_identity; ?></a>. <?php wp_loginout(); ?></p>
 				<?php else : ?>
 					<p>
-						<label for="author"><small>NICK：</small></label><input type="text" name="author" class="comments-input" id="author" value="<?php echo $comment_author; ?>" size="10" tabindex="1" />&nbsp;&nbsp;
-						<label for="email"><small>EMAIL：</small></label>
+						<label for="author"><small>Nick：</small></label><input type="text" name="author" class="comments-input" id="author" value="<?php echo $comment_author; ?>" size="10" tabindex="1" />&nbsp;&nbsp;
+						<label for="email"><small>Email：</small></label>
 						<input type="text" name="email" class="comments-input" id="email" value="<?php echo $comment_author_email; ?>" size="10" tabindex="2" />
 					</p>
 
@@ -32,7 +32,7 @@
 						<textarea onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('submit').click();return false};" name="comment" id="comment-textarea" class="form-textarea" cols="100%" rows="5" tabindex="4"></textarea>
 					</p>
 					<p>
-						<input id="submit" name="submit" type="submit" class="form-submit" tabindex="5" value="SUBMIT YOUR COMMENTS" />
+						<input id="submit" name="submit" type="submit" class="form-submit" tabindex="5" value="SUBMIT" />
 						<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 						<span><small>(So you agree with the <a href="/about?ref=comment_bottom#policy" target="_blank" rel="nofollow">rules</a>)</small></span>
 					</p>
