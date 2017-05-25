@@ -86,19 +86,19 @@ function pagenavi_link($page, $n) {
 	return '<a href="' . esc_url(get_pagenum_link($page)) . '" class="page-numbers">'.$n.'</a>';
 }
 
-//function remove_media_menu() {
-//	global $submenu;
-//	unset($submenu['upload.php'][5]);
-//	global $menu;
-//	unset($menu[10]);
-//}
-//add_action('admin_head', 'remove_media_menu');
+function remove_media_menu() {
+	global $submenu;
+	unset($submenu['upload.php'][5]);
+	global $menu;
+	unset($menu[10]);
+}
+add_action('admin_head', 'remove_media_menu');
 
-//function remove_all_media_buttons()
-//{
-//    remove_all_actions('media_buttons');
-//}
-//add_action('admin_init', 'remove_all_media_buttons');
+function remove_all_media_buttons()
+{
+    remove_all_actions('media_buttons');
+}
+add_action('admin_init', 'remove_all_media_buttons');
 
 function is_crawler() {
 	$userAgent = strtolower($_SERVER['HTTP_USER_AGENT']);
