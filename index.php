@@ -23,7 +23,7 @@
 			<div class="headsgst">
 				<dl>
 				<dt><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></dt>
-				<dd><?php echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', $post->post_content)), 0, 160,"..."); ?> <small>[<a href="<?php the_permalink(); ?>" >Read More</a> - <?php the_views($display = false); ?>&nbsp;views]</small></dd>
+				<dd><?php echo mb_strimwidth(strip_tags(apply_filters('the_excerpt', $post->post_content)), 0, 140,"..."); ?> <small>[<a href="<?php the_permalink(); ?>" >Read More</a> - <?php the_views($display = false); ?>&nbsp;views]</small></dd>
 				</dl>
 			</div>
 			<div class="headsgst">
