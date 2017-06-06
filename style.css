@@ -67,7 +67,7 @@ a.current-menu-item {border-bottom: 2px solid #FFD324;}
 .headsgst ul li a{float:left;width: 90%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .headsgst ul li span{float:right;text-align:right;color:#777;text-indent: 0; font-size:12px;}
 .headsgst dl dt{text-align:center;font-size:16px;font-weight:bold;background:#FFF6BF;color:#514721;border:1px solid #FFD324;padding:5px 0;}
-.headsgst dl dd{line-height:24px;text-indent:2em;word-break:break-all;padding:5px 0;}
+.headsgst dl dd{line-height:24px;text-indent:2em;padding:5px 0;}
 
 /* flashNews */
 .flashNews {float:left;position:relative;width:260px;height:250px;overflow:hidden;border:1px solid #fff;}
@@ -104,7 +104,6 @@ a.current-menu-item {border-bottom: 2px solid #FFD324;}
 .entry p iframe{display:block;margin:0 auto;}
 .entry ul ,.entry ol  {margin:8px 0 8px 55px;}
 .entry ul li ,.entry ol li {padding:3px 0;}
-.entry p{word-break:break-all;}
 .entry blockquote{color:#555;min-height:50px;margin: 5px 10px 5px 0px;padding: 0px 10px 0px 50px;border-left:4px solid #DDD;background:url(images/quote.gif) no-repeat 15px top;}
 .entry table{border:0;}
 .more-link{background:transparent url(images/sprite.png) no-repeat 0 -94px;padding-left:18px;}
