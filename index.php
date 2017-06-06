@@ -9,7 +9,7 @@
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<figure>
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" target="_blank">
-					<img alt="<?php the_title(); ?>" src="<?php $key="flash_image"; echo get_post_meta($post->ID, $key, true); ?>"/>
+					<img alt="<?php the_title(); ?>" src="<?php $key="flash_image"; echo get_post_meta($post->ID, $key, true); ?>&w=260&h=200&crop-to-fit"/>
 					<span><?php the_title(); ?></span>
 				</a>
 			</figure>
@@ -62,7 +62,7 @@
 					$cover_s_meta = get_post_meta($post->ID,$key,TRUE);
 					if ($cover_s_meta != ""):
 				?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img alt="<?php the_title(); ?>" src="<?php echo $cover_s_meta;?>&w=120&h=92&crop-to-fit" style="max-width:120px;padding:5px;"></a>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img alt="<?php the_title(); ?>" src="<?php echo $cover_s_meta;?>&w=120&h=92&crop-to-fit"></a>
 				<?php else: ?>
 				<?php
 				$the_cat = get_the_category();
