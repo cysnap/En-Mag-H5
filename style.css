@@ -66,7 +66,7 @@ a.current-menu-item {border-bottom: 2px solid #FFD324;}
 .headsgst ul li {text-overflow: ellipsis;white-space: nowrap;overflow:hidden;background:url(images/rcmd.gif) no-repeat 0px 4px;padding:0 0 0 32px;list-style:none;list-style-position: inside;line-height:24px;}
 .headsgst ul li a{float:left;width: 90%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .headsgst ul li span{float:right;text-align:right;color:#777;text-indent: 0; font-size:12px;}
-.headsgst dl dt{text-align:center;font-size:16px;font-weight:bold;background:#FFF6BF;color:#514721;border:1px solid #FFD324;padding:5px 0;}
+.headsgst dl dt{text-align:center;font-size:16px;height:18px;font-weight:bold;background:#FFF6BF;color:#514721;border:1px solid #FFD324;padding:5px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .headsgst dl dd{line-height:24px;text-indent:2em;padding:5px 0;}
 
 /* flashNews */
