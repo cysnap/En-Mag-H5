@@ -3,10 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<title><?php if(is_single() || is_page() || is_archive() || is_404() || is_search()) : wp_title('_',true,'right'); endif; bloginfo('name'); if(is_front_page()) : echo " - "; echo bloginfo('description'); endif;  if( $paged == "" ) $pagenum = "";else echo $pagenum = " - Page: ".$paged; ?></title>
-	<?php if(strpos($_SERVER['HTTP_USER_AGENT'],'AppleWebKit') !== false) :?>
 	<link rel="apple-touch-icon" href="/iOS_icon.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<?php endif;?>
 	<?php if(is_home() && !is_paged()) :?>
 		<meta name="description" content="<?php echo bloginfo('description'); ?>" />
 		<?php endif; if(is_single()) :?>
